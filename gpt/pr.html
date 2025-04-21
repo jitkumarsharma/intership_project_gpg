@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Listing</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+    .product { background: white; padding: 10px; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .product-title { font-size: 18px; font-weight: bold; margin-top: 10px; }
+    .product-price { color: #e63946; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h2>Shop Our Collection</h2>
+<div class="products" id="productList"></div>
+
+<script>
+  const products = [
+    { id: 1, name: "Stylish Jacket", price: "$49.99", image: "https://source.unsplash.com/400x400/?jacket" },
+    { id: 2, name: "Casual Shoes", price: "$39.99", image: "https://source.unsplash.com/400x400/?shoes" },
+    { id: 3, name: "Cool Sunglasses", price: "$19.99", image: "https://source.unsplash.com/400x400/?sunglasses" }
+  ];
+
+  const productList = document.getElementById("productList");
+
+  function renderProducts() {
+    productList.innerHTML = products.map(product => `
+      <div class="product" onclick="viewProduct(${product.id})">
+        <img src="${product.image}" alt="${product.name}" />
+        <div class="product-title">${product.name}</div>
+        <div class="product-price">${product.price}</div>
+      </div>
+    `).join('');
+  }
+
+  function viewProduct(id) {
+    const selectedProduct = products.find(p => p.id === id);
+    localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+    window.location.href = "product.html";
+  }
+
+  renderProducts();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Tracking</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 30px; }
+    h2 { text-align: center; }
+    .tracking-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .order-id { font-size: 18px; margin-bottom: 20px; }
+    .step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .circle {
+      width: 20px;
+      height: 20px;
+      background: #ccc;
+      border-radius: 50%;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .circle.active { background: #28a745; }
+    .label { font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h2>Track Your Order</h2>
+
+<div class="tracking-container">
+  <div class="order-id">Order ID: <strong>#123456789</strong></div>
+  
+  <div class="step"><div class="circle active"></div><div class="label">Order Placed</div></div>
+  <div class="step"><div class="circle active"></div><div class="label">Processing</div></div>
+  <div class="step"><div class="circle active"></div><div class="label">Shipped</div></div>
+  <div class="step"><div class="circle"></div><div class="label">Out for Delivery</div></div>
+  <div class="step"><div class="circle"></div><div class="label">Delivered</div></div>
+</div>
+
+</body>
+</html>

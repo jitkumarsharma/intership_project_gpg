@@ -1,0 +1,185 @@
+/* bg-landing-img  */
+
+.bg-landing-img{
+    background-image: url(/Images/landing_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 530px;
+    position: relative;
+}
+.landind-containt{
+    height: 530px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.btn-1{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.btn-2{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+/* bg-landing-img  */
+
+.cetegory{
+    display: flex;
+    justify-content: space-between;
+}
+.cetegory_item{
+    text-align: center;
+    padding: 20px 0;
+ 
+}
+.cetegory_item a{
+    text-decoration: none;
+    color: #000000;
+ 
+}
+.cetegory_item .img{
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+}
+.cetegory_item p{
+    text-decoration: none;
+    color: #000000;
+}
+/* top-deal  */
+
+.top-deal{
+    margin-top: 25px;
+}
+.heading{
+    font-size: 32px;
+    color: #000000;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.top-collection{
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 531px;
+    justify-content: space-between;
+}
+.top-1-img{
+    background-image: url(/Images/topdeal_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+}
+.top-2-img{
+    background-image: url(/Images/topdeal_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+}
+.top-3-img{
+    background-image: url(/Images/topdeal_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+}
+.top-4-img{
+    background-image: url(/Images/topdeal_4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+}
+.top-deal-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px 10px;
+}
+.top-deal-box h1 , p{
+    color: #ffffff;
+}
+.top-deal-box button{
+    width: 150px;
+}
+.row-product{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    text-align: center;
+}
+.row-product p{
+    margin-bottom: -2px;
+    color: black
+}
+/* top-deal  */
+
+
+
+
+
+/* bg-banner-2  */
+.bg-banner-2{
+    background-image: url(/Images/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin: 20px 0;
+    color: #FFFFFF;
+}
+/* bg-banner-2  */
+
+
+
+
+
+
+/* containt-subscriber  */
+.containt-subscriber{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    color: #000000;
+}
+.subscriber{
+    text-align: center;
+}
+.input-subscriber{
+    display: flex;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: -1px 1px 8px 1px rgba(0,0,0,0.39);
+    -moz-box-shadow: -1px 1px 8px 1px rgba(0,0,0,0.39);
+    box-shadow: -1px 1px 8px 1px rgba(0,0,0,0.39);
+    height: 50px;
+}
+.input-subscriber input{
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+}
+/* containt-subscriber  */
+
+.footer-item-list a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+
+

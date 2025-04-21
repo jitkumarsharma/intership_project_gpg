@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            width: 300px;
+        }
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .icons div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .icons img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LOGO</div>
+        <div class="search-box">
+            <input type="text" placeholder="Enter product here">
+            <button onclick="searchProduct()">
+                🔍
+            </button>
+        </div>
+        <div class="icons">
+            <div>
+                👤 ACCOUNT
+            </div>
+            <div>
+                🛒
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchProduct() {
+            let input = document.querySelector('.search-box input').value;
+            alert('Searching for: ' + input);
+        }
+    </script>
+</body>
+</html>

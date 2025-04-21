@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Product Slider</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f8f8; text-align: center; margin: 0; padding: 0; }
+        h2 { margin: 20px 0; font-size: 28px; }
+        .slider-container { width: 90%; margin: auto; overflow: hidden; position: relative; padding: 20px; background: white; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+        .slider { display: flex; transition: transform 0.5s ease-in-out; }
+        .slide { min-width: 250px; margin: 10px; background: #fff; padding: 15px; border-radius: 10px; text-align: center; position: relative; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
+        .product-image { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+        .product-info { margin-top: 10px; text-align: left; }
+        .product-name { font-size: 18px; font-weight: bold; }
+        .product-price { font-size: 16px; color: #ff4d4d; font-weight: bold; }
+        .wishlist { position: absolute; top: 10px; right: 15px; font-size: 22px; cursor: pointer; color: gray; transition: color 0.3s ease; }
+        .wishlist.active { color: red; }
+        .add-to-cart { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; background-color: #28a745; color: white; font-size: 16px; cursor: pointer; transition: background 0.3s ease; }
+        .add-to-cart:hover { background-color: #218838; }
+        .nav-buttons { margin-top: 20px; }
+        .nav-btn { background-color: #007bff; color: white; padding: 10px 20px; border: none; cursor: pointer; margin: 5px; border-radius: 5px; transition: background 0.3s ease; }
+        .nav-btn:hover { background-color: #0056b3; }
+        .view-more { margin-top: 20px; cursor: pointer; font-size: 16px; color: #007bff; text-decoration: underline; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Trending Products</h2>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <!-- Product Items -->
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/400x400?fashion1" class="product-image" alt="Product">
+                <div class="wishlist" onclick="toggleWishlist(this)">&#10084;</div>
+                <div class="product-info">
+                    <div class="product-name">T-shirt</div>
+                    <div class="product-price">$20.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/400x400?fashion2" class="product-image" alt="Product">
+                <div class="wishlist" onclick="toggleWishlist(this)">&#10084;</div>
+                <div class="product-info">
+                    <div class="product-name">Jacket</div>
+                    <div class="product-price">$35.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random/400x400?fashion3" class="product-image" alt="Product">
+                <div class="wishlist" onclick="toggleWishlist(this)">&#10084;</div>
+                <div class="product-info">
+                    <div class="product-name">Hoodie</div>
+                    <div class="product-price">$30.00</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="nav-btn" onclick="prevSlide()">Prev</button>
+        <button class="nav-btn" onclick="nextSlide()">Next</button>
+    </div>
+
+    <div class="view-more" onclick="viewMore()">View More</div>
+
+    <script>
+        let slider = document.getElementById("slider");
+
+        function nextSlide() {
+            slider.scrollBy({ left: 300, behavior: "smooth" });
+        }
+
+        function prevSlide() {
+            slider.scrollBy({ left: -300, behavior: "smooth" });
+        }
+
+        function toggleWishlist(icon) {
+            icon.classList.toggle("active");
+        }
+
+        function viewMore() {
+            window.location.href = "collection.html"; // Redirects to Collection Page
+        }
+    </script>
+
+</body>
+</html>
