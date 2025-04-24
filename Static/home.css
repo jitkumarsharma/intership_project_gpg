@@ -114,16 +114,34 @@
 }
 .top-deal-box button{
     width: 150px;
+    text-decoration: none;
 }
+.top-deal-box button a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
 .row-product{
     display: flex;
     justify-content: space-between;
     color: #000000;
-    text-align: center;
+    text-align: left;
 }
 .row-product p{
     margin-bottom: -2px;
     color: black
+}
+.product img{
+    margin-bottom: 4px;
+}
+.product img:hover{
+    transform: scale(1.05);
+}
+.type{
+    font-size: 12px;
 }
 /* top-deal  */
 

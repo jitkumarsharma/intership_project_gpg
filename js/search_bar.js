@@ -1,6 +1,6 @@
 const products = [
     "Jeans", "T-shirt", "Scurt", "Frok",
-    "Glasses", "Adidas", "Glosy purse", "Women's jeans", "Man's jeans" , "Under 5000"
+    "Glasses", "Adidas", "Glosy purse", "Women's jeans", "Man's jeans" , "Under 5000", "Bata", "Puma", "Kid's cloths", "Chinel"
   ];
   
   function showSuggestions() {
