@@ -1,10 +1,11 @@
+
 const products = [
     {
         id: 1,
         name: "Men's Green Jacket",
         price: 29.99,
         original_price: 30.99,
-        image: "/image/product_1.png", /*https://via.placeholder.com/600*/
+        image: "/image/product_1.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         features: ["High-quality material", "Durable design", "Available in multiple colors"],
         inStock: true
@@ -13,7 +14,7 @@ const products = [
         id: 2,
         name: "Women's Long Dress",
         price: 49.99,
-        original_price: 30.99,
+        original_price: 60.99,
         image: "/image/product_2.png",
         description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         features: ["Premium quality", "Ergonomic design", "Long-lasting"],
@@ -23,7 +24,7 @@ const products = [
         id: 3,
         name: "Men's Brown Shirt",
         price: 19.99,
-        original_price: 30.99,
+        original_price: 33.99,
         image: "/image/product_3.png",
         description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         features: ["Compact size", "Easy to use", "Affordable price"],
@@ -33,7 +34,7 @@ const products = [
         id: 4,
         name: "Leather Brown Jacket",
         price: 39.99,
-        original_price: 30.99,
+        original_price: 40.99,
         image: "/image/product_4.png",
         description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         features: ["Versatile use", "Stylish look", "Reliable performance"],
@@ -41,9 +42,9 @@ const products = [
     },
     {
         id: 5,
-        name: "Blue Danim Jacket",
+        name: "Blue Denim Jacket",
         price: 59.99,
-        original_price: 30.99,
+        original_price: 70.99,
         image: "/image/product_5.png",
         description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
         features: ["Advanced technology", "High durability", "Multiple configurations"],
@@ -53,12 +54,121 @@ const products = [
         id: 6,
         name: "Girl's White T-shirt",
         price: 24.99,
-        original_price: 30.99,
+        original_price: 39.99,
         image: "/image/product_6.png",
         description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
         features: ["Lightweight", "Portable", "Cost-effective"],
         inStock: true
     },
+    {
+        id: 7,
+        name: "Men's Trouser",
+        price: 34.99,
+        original_price: 58.99,
+        image: "/image/product_7.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 8,
+        name: "Men's White Classic T-shirt",
+        price: 14.99,
+        original_price: 22.99,
+        image: "/image/product_8.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 9,
+        name: "Men's Denim Shirt(Black)",
+        price: 44.99,
+        original_price: 59.99,
+        image: "/image/product_9.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 10,
+        name: "Women's Top",
+        price: 41.99,
+        original_price: 49.99,
+        image: "/image/product_10.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 11,
+        name: "Women's Long Coat",
+        price: 56.99,
+        original_price: 69.99,
+        image: "/image/product_11.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 12,
+        name: "Women's Black Long Coat",
+        price: 44.99,
+        original_price: 59.99,
+        image: "/image/product_12.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 13,
+        name: "Women's White T-shirt",
+        price: 33.99,
+        original_price: 45.99,
+        image: "/image/product_13.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 14,
+        name: "Women's Brown Slim Frock",
+        price: 34.99,
+        original_price: 65.99,
+        image: "/image/product_14.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 15,
+        name: "Girl's White Classic T-shirt",
+        price: 14.99,
+        original_price: 29.99,
+        image: "/image/product_15.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+    {
+        id: 16,
+        name: "Women's Hijab",
+        price: 44.99,
+        original_price: 59.99,
+        image: "/image/product_16.png",
+        description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        features: ["Lightweight", "Portable", "Cost-effective"],
+        inStock: true
+    },
+];
+
+const dealProducts = [
+    {
+        id: 1,
+        name: "Product 1",
+        image: "/image/product_1.png",
+        description: "High-quality material, durable design, available in multiple colors."
+    }
 ];
 
 function loadFeaturedProducts() {
@@ -73,7 +183,7 @@ function loadFeaturedProducts() {
                     <div class="card-body">
                         <h5 class="card-title"><a href="product-info.html?id=${product.id}" class="text-decoration-none">${product.name}</a></h5>
                         <p class="card-text">$${product.price.toFixed(2)}</p>
-                         <p class="card-text original_price"><del>$${product.original_price.toFixed(2)}</del></p>
+                        <p class="card-text original_price"><del>$${product.original_price.toFixed(2)}</del></p>
                         <button class="btn btn-outline-primary add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
                     </div>
                 </div>
@@ -85,23 +195,52 @@ function loadFeaturedProducts() {
 
 function loadAllProducts() {
     const container = document.getElementById('product-list');
-    if (!container) return;
-    container.innerHTML = '';
-    products.forEach(product => {
-        container.innerHTML += `
-            <div class="col-md-4 mb-4">
-                <div class="card product-card">
-                    <a href="product-info.html?id=${product.id}"><img src="${product.image}" class="card-img-top" alt="${product.name}"></a>
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="product-info.html?id=${product.id}" class="text-decoration-none">${product.name}</a></h5>
-                        <p class="card-text">$${product.price.toFixed(2)}</p>
-                        <button class="btn btn-outline-primary add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    if (!container || !viewMoreBtn) return;
+
+    let visibleCount = 6; // Number of products initially visible
+    const increment = 3; // Number of products to show on each click
+
+    // Function to render products
+    function renderProducts() {
+        container.innerHTML = products
+            .slice(0, visibleCount)
+            .map(product => `
+                <div class="col-md-4 mb-4 product-card">
+                    <div class="card product-card">
+                        <a href="product-info.html?id=${product.id}"><img src="${product.image}" class="card-img-top" alt="${product.name}"></a>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="product-info.html?id=${product.id}" class="text-decoration-none">${product.name}</a></h5>
+                            <p class="card-text">$${product.price.toFixed(2)}</p>
+                            <p class="card-text original_price"><del>$${product.original_price.toFixed(2)}</del></p>
+                            <button class="btn btn-outline-primary add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-    });
-    addCartEventListeners();
+            `)
+            .join('');
+
+        // Show all product cards
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.classList.add('visible');
+        });
+
+        // Update button visibility
+        viewMoreBtn.style.display = visibleCount >= products.length ? 'none' : 'block';
+        addCartEventListeners();
+    }
+
+    // Initial render
+    renderProducts();
+
+    // View More button event listener
+    viewMoreBtn.removeEventListener('click', viewMoreHandler); // Prevent duplicate listeners
+    viewMoreBtn.addEventListener('click', viewMoreHandler);
+
+    function viewMoreHandler() {
+        visibleCount = Math.min(visibleCount + increment, products.length);
+        renderProducts();
+    }
 }
 
 function loadProductDetails() {
@@ -241,7 +380,6 @@ function validateCheckoutForm() {
     });
 }
 
-
 function validateSignInForm() {
     const form = document.getElementById('signin-form');
     if (!form) return;
@@ -353,6 +491,7 @@ function searchProducts() {
                         <div class="card-body">
                             <h5 class="card-title"><a href="product-info.html?id=${product.id}" class="text-decoration-none">${product.name}</a></h5>
                             <p class="card-text">$${product.price.toFixed(2)}</p>
+                            <p class="card-text original_price"><del>$${product.original_price.toFixed(2)}</del></p>
                             <button class="btn btn-outline-primary add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
                         </div>
                     </div>
@@ -362,23 +501,6 @@ function searchProducts() {
         addCartEventListeners();
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    searchProducts();
-    validateSignInForm();
-    validateLoginForm();
-    validateForgotPasswordForm();
-});
-
-
-const dealProducts = [
-    {
-        id: 1,
-        name: "Product 1",
-        image: "/image/product_1.png",
-        description: "High-quality material, durable design, available in multiple colors."
-    }
-];
 
 function startCountdown() {
     const endDate = new Date('April 26, 2025 23:59:59').getTime();
@@ -410,11 +532,14 @@ function startCountdown() {
         document.getElementById('seconds').textContent = seconds;
     }, 1000);
 
-    // Apply pulse animation to timer circles
     document.querySelectorAll('.timer-circle').forEach(circle => circle.classList.add('pulse'));
 }
 
-// Call the countdown function when the page loads
-document.addEventListener('DOMContentLoaded', startCountdown);
-
-
+document.addEventListener('DOMContentLoaded', () => {
+    searchProducts();
+    validateSignInForm();
+    validateLoginForm();
+    validateForgotPasswordForm();
+    startCountdown();
+    loadAllProducts(); // Ensure loadAllProducts is called on page load
+});
