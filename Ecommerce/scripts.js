@@ -165,7 +165,7 @@ const products = [
 const dealProducts = [
     {
         id: 1,
-        name: "Product 1",
+        name: "Men's Green Jacket",
         image: "/image/product_1.png",
         description: "High-quality material, durable design, available in multiple colors."
     }
@@ -503,7 +503,7 @@ function searchProducts() {
 }
 
 function startCountdown() {
-    const endDate = new Date('April 26, 2025 23:59:59').getTime();
+    const endDate = new Date('April 28, 2025 23:59:59').getTime();
     const dealProduct = dealProducts[0];
     document.getElementById('deal-product-name').textContent = dealProduct.name;
     document.querySelector('.deal-description').textContent = dealProduct.description;
