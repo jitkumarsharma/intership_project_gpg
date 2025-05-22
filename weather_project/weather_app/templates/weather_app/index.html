@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .weather-container {
+            max-width: 500px;
+            width: 100%;
+            margin: 1rem;
+        }
+        .weather-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .weather-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+        .form-control {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(255, 255, 255, 0.2));
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            border-radius: 8px;
+            padding: 0.75rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+        .form-control:hover, .form-control:focus {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.3), rgba(255, 255, 255, 0.3));
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            color: #fff;
+        }
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .btn-primary {
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            background: #007bff;
+            border: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        .weather-result-card {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.3), rgba(255, 255, 255, 0.3));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .weather-result-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .weather-result-card img {
+            width: 60px;
+            height: 60px;
+        }
+        .weather-result-card h5 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        .weather-result-card p {
+            margin: 0.3rem 0;
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+        .alert {
+            border-radius: 8px;
+            margin-top: 1rem;
+            background: rgba(255, 75, 75, 0.9);
+            color: #fff;
+        }
+        @media (max-width: 576px) {
+            .weather-card {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <div class="weather-card">
+            <h1 class="text-center">Weather App</h1>
+            <form method="post" class="mt-4">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="city" class="form-label">Enter City</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="e.g., London">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Get Weather</button>
+                </div>
+            </form>
+
+            {% if error %}
+                <div class="alert alert-danger mt-3">{{ error }}</div>
+            {% endif %}
+
+            {% if weather_data %}
+                <div class="weather-result-card">
+                    <h5 class="card-title">{{ weather_data.city }}</h5>
+                    <img src="http://openweathermap.org/img/w/{{ weather_data.icon }}.png" alt="Weather icon">
+                    <p>Temperature: {{ weather_data.temperature }}°C</p>
+                    <p>Description: {{ weather_data.description|title }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
